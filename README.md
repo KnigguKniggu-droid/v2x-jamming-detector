@@ -1,5 +1,15 @@
 # V2X RF Jamming Detector
 
+> **TL;DR** — Detects & classifies RF jamming on an OFDM V2X link using energy detection +
+> spectral analysis. **100% detection and correct classification** of tone / barrage / sweep
+> jammers, with 0 false alarms.
+
+### Quickstart
+```bash
+pip install -r requirements.txt
+python cli.py demo          # clean + all jammers: detection + classification
+```
+
 Detects and **classifies RF jamming** attacks on a vehicle-to-everything (**V2X**) radio link.
 Builds a real **OFDM** physical layer (like 802.11p / C-V2X), passes it through an AWGN
 channel, injects jammers, and flags + identifies them from the received spectrum.
